@@ -13,7 +13,7 @@ canActivate:[LoginGuard]
 {
   path:"login",
   component:LoginComponent,
- 
+  canActivate:[AuthGuard]
   
 }
 
