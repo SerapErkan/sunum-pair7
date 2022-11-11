@@ -87,6 +87,21 @@
               {{this.authForm.get('userName')?.errors?.['minlength']?.['requiredLength']}}
               karakter olmalı
             </div>
+
+            <div
+            class="help is-danger"
+            *ngIf="this.authForm.get('userName')?.errors?.['maxlength']"
+          >
+            User Name
+            {{this.authForm.get('userName')?.errors?.['maxlength']?.['actualLength']}}
+            karakter içermektedir ,minumum
+            {{this.authForm.get('userName')?.errors?.['maxlength']?.['requiredLength']}}
+            karakter olmalı
+          </div>
+
+
+
+
           </ng-container>
         </div>
    <br>
