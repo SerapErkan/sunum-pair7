@@ -1,11 +1,10 @@
 <div class="container">
-  <br />
-  <br />
+  
   <div class="row">
     <div class="col"></div>
     <div class="col">
       <div *ngIf="individualCustomersDetail">
-        <div class="p-3 mb-sm-5 bg-light btn-warning rounded-2">
+        <div class="p-3 mb-sm-5  btn-warning rounded-5">
           <div class="container-fluid py-">
             <div *ngFor="let p of individualCustomersDetail">
               <p class="col-md-8 fs-4">CustomerId:{{ p.customerId }}</p>
@@ -19,7 +18,7 @@
         </div>
       </div>
       <div *ngIf="corporateCustomersDetail">
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="p-5 mb-4  rounded-5">
           <div class="container-fluid py-5">
             <div *ngFor="let p of corporateCustomersDetail">
               <p class="col-md-8 fs-4">CustomerId:{{ p.customerId }}</p>
@@ -31,13 +30,13 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col rounded-5" >
       <div class="list-group w-auto" *ngFor="let p of serviceCustomerDetail">
         <br />
         <br />
 
         <a class="list-group-item" aria-current="true">
-          <div class="d-flex gap-2 w-100 justify-content-between">
+          <div class="d-flex gap-2 w-100 justify-content-between " >
             <div class="row">
               <div class="col">
                 <img
