@@ -117,7 +117,7 @@ export class AuthComponent implements OnInit {
       this.authService.signUp(user).subscribe({
         next: (response) => {
           console.info(`kayıt başarılı ${response.userName},${response.password}`);
-          this.toastr.error("New record created")
+          this.toastr.success("New record created")
         },
         error: (err) => {
           console.log(err,);
